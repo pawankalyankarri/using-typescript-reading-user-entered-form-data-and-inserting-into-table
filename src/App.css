@@ -1,0 +1,24 @@
+.emp form {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10%;
+}
+.emp .emptable {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.emp .emptable table,.emp .emptable td,.emp .emptable th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.emp .emptable td,.emp .emptable th{
+    padding:1rem;
+}
