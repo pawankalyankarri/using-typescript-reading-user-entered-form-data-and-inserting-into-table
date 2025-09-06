@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 
 interface Formdata {
   name: string;
@@ -10,11 +9,7 @@ interface Emparr {
 }
 
 const EmpTable = ({ arr }: Emparr) => {
-  console.log(arr);
-  let [dataarr, setDataarr] = useState<Formdata[]>([]);
-  useEffect(() => {
-    setDataarr(arr);
-  }, [arr]);
+
   return (
     <div className="emptable">
       <table>
@@ -26,7 +21,7 @@ const EmpTable = ({ arr }: Emparr) => {
           </tr>
         </thead>
         <tbody>
-          {dataarr.map((item, idx) => {
+          {arr.map((item, idx) => {
             return (
               <tr key={idx}>
                 <td>{item.name}</td>
